@@ -1,27 +1,30 @@
-const iz = document.getElementById('prev');
-const de = document.getElementById('next');
+const iz = document.getElementById('iz');
+const de = document.getElementById('de');
 img = 1;
 
 function cambiaImagenIz(){
     img -= 1;
-    if (img < 0){
-        img = 2;
+    if (img < 1){
+        img = 3;
     };
-    document.getElementById("mySlides fade").src = img + ".jpg";
+    document.getElementById("miimagen").src = img + ".jpg";
+    document.getElementById('contador').innerHTML="<p>"+img+"/3</p>"
 };
 
 function cambiaImagenDe(){ 
     img += 1;
-    if (img > 2){
-        img = 0;   
+    if (img > 3){
+        img = 1;   
     }
-    document.getElementById("mySlides fade").src = img + ".jpg";
+    document.getElementById("miimagen").src = img + ".jpg";
+    document.getElementById('contador').innerHTML="<p>"+img+"/3</p>"
+
 };
 
 iz.onclick = cambiaImagenIz;
 de.onclick = cambiaImagenDe;
 
-window.addEventListener('deviceorientation', trataOrientacion);
+/* window.addEventListener('deviceorientation', trataOrientacion);
 
 
 function trataOrientacion(e){
@@ -29,4 +32,4 @@ function trataOrientacion(e){
     //document.getElementById("myslydes fade").style.tr
     ansform = "rotate("+e.beta + "deg)";
     //document.getElementById("myslydes fade").style.transform = "rotate("+e.gamma + "deg)";
-}
+} */

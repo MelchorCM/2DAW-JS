@@ -1,0 +1,24 @@
+form{
+    width: 350px;
+    background-color: gray;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+div{
+    border: black 1px solid;
+    width: 500px;
+    position: relative;
+    top: -260px;
+    left: 600px;
+    background-color: gray;
+}
+
+body{
+    background-color: black;
+}
+
+legend{
+    font-size: xx-large;
+}

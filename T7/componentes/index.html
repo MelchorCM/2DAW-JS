@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="counter">
+        valor de mi dato: {{midato}}
+        <button-counter titulo="Componente 1"></button-counter>
+        <button-counter titulo="Este es otro" color="red"></button-counter>
+        <button-counter v-bind:titulo="dato" titulo="Componente 3"></button-counter>
+        <button-counter v-bind:titulo="dato" titulo="Componente 4"></button-counter>
+
+    </div>
+</body>
+</html>

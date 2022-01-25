@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="aplicacionVue">
+        Nuevo nombre: {{ new_name }}<br>
+        <input type="text" v-model="new_name">
+        <h1 v-if="lista_nombres">LISTA DE PERSONAS:</h1>
+        <ol>
+            <li v-for="nombre in lista_nombres">
+                {{nombre}}
+            </li> 
+        </ol>
+        <button v-on:click="incrementa">Añadir a la lista</button>
+    </div>
+</body>
+</html>

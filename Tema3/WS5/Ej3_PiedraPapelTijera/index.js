@@ -1,3 +1,10 @@
+export{Game, Player}
+
+
+window.onload
+
+
+
 class Game {
     constructor(player1, player2){
         this.ganador = "";
@@ -40,7 +47,6 @@ b = new Player("Mel");
 
 g = new Game(a,b);
 g.partida();
-
 
 
 
